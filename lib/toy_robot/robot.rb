@@ -52,6 +52,14 @@ module ToyRobot
       # @direction = DIRECTIONS.rotate(1)[index]
     end
 
+    def report
+      {
+        north: north,
+        east: east,
+        direction: direction
+      }
+    end
+
     private
 
     def turn(turn_direction)
